@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.3;
+    color: var(--primary-text);
+}
+
+:root {
+    --primary-text: #111;
+    --bg-color: #F8F8F8;
+    --bg-form-color: #fff;
+    --bg-input: #f9f9f9;
+    --border-color: #EEE;
+    --link-color: #007AFF;
+}
+
+a {
+    text-decoration: none;
+    color: var(--link-color);
+}
+
+.app {
+    background-color: var(--bg-color);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    width: 340px;
+}
+
+.form-body {
+    background-color: var(--bg-form-color);
+    border-radius: 8px;
+    padding: 24px;
+}
+
+.form-header {
+    margin-bottom: 24px;
+}
+
+.form-header p {
+    text-align: center;
+    font-size: 24px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-login {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+input {
+    padding: 8px;
+    border: 1px solid var(--border-color);
+    outline: none;
+    border-radius: 4px;
+    background-color: var(--bg-input);
+}
+
+.label-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.create-new {
+    text-align: center;
+}
+
+.btn-submit {
+    border: none;
+    outline: none;
+    background-color: var(--link-color);
+    border-radius: 8px;
+    font-size: 16px;
+    color: var(--bg-form-color);
+    transition: all 0.2s ease-in-out;
+    font-weight: 700;
+}
+
+.btn-submit:hover {
+    cursor: pointer;
+    background-color: var(--bg-input);
+    color: var(--link-color);
+}
